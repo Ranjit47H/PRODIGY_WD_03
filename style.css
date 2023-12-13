@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+body{
+    text-align: center;
+    background-color: #0C0404;
+}
+#form-container{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    margin-top: 100px;
+}
+.button-32 {
+  background-color:#56baed;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  margin:10px;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:hover{
+  outline: 0;
+  background: yellow;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+.button-32:active{
+    background: #2980b9;
+}
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+#buttton-mod-selection{
+    display: block;
+}
+.select-box{
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    background: #fff;
+  padding: 20px 25px 25px;
+  border-radius: 10px;
+  max-width: 400px;
+  display: none;
+
+  }
+  .select-box.hide{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .select-box header{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  .select-box .title{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  .select-box .options{
+    display: flex;
+  }
+  .options button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    border: none;
+    background: #56baed;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .options button:hover,
+  .btn button:hover{
+    transform: scale(0.96);
+  }
+.con h1{
+    font-family: 'Dhurjati', sans-serif;
+    color:aliceblue;
+    font-size: 60px;
+}
+.con img{
+    height:226px;
+    width: 226px;
+    border-radius: 40px;
+}
+#form-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 50px auto;
+    background-color: #000; /* Black background color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust shadow color if needed */
+}
+#player-form {
+    display: flex;
+    flex-direction: column;
+}
+#player-form label {
+    margin-bottom: 8px;
+    color: #fff; /* White text color for labels */
+}
+#player-form input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* White background color for input fields */
+    color: #000; /* Black text color for input fields */
+}
+#player-form button {
+    padding: 10px;
+    background-color: #56baed;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#player-form button:hover {
+    background-color: #45a049;
+}
+.title>p{
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 30px;
+}
+.cell{
+    background-color: #0C0404;
+    border:#e7f707;
+    color:white;
+}
+#board{
+    background-color: #FFFF33;
+    margin: 30px auto;
+    width: 303px;
+    display: none;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: center;
+    cursor: pointer;
+    background-color: #0C0404;
+    border: #e7f707;
+    color: #fff;
+    line-height: 100px;
+}
+.options button{
+  color:black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#result {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#result h2 {
+  color:#0C0404;
+}
+#result button {
+  margin-top: 10px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color:#56baed;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#result button:hover {
+  background-color: #0004fd;
+}
+.clickone{
+  background-color: #ccc;
+  height:200px;
+  width:200px;
+}
+.clicktwo{
+  background-color: yellow;
+}
+.cell-x{
+  color:#fd39bc;
+  text-shadow: 
+  10px 10px 0 #ae0589
+  -10px -10px 0 #ae0589
+  10px 10px 0 #ae0589
+  -10px 10px 0 #ae0589;
+}
+.cell-o{
+  color:#05a9d0;
+}
